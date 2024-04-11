@@ -22,7 +22,6 @@ dotenv.load_dotenv()
 my_email = os.environ.get("my_email")
 password = os.environ.get("password")
 flask_key = os.environ.get("flask_key")
-db_uri = os.environ.get("db_uri")
 '''
 Make sure the required packages are installed: 
 Open the Terminal in PyCharm (bottom left). 
@@ -64,7 +63,7 @@ gravatar = Gravatar(app,
 # CREATE DATABASE
 class Base(DeclarativeBase):
     pass
-app.config['SQLALCHEMY_DATABASE_URI'] = db_uri
+app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get("db_uri","sqlite:///posts_final.db")
 db = SQLAlchemy(model_class=Base)
 db.init_app(app)
 
