@@ -1,5 +1,5 @@
 2{
-3    "name": "flask-blog-website",
+3    "name": "flask_blog_website",
 4    "version": "1.0.0",
 5    "description": "This is my first deployment",
 6    "scripts": {
