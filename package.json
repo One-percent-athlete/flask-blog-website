@@ -1,5 +1,5 @@
 2{
-3    "name": "Flask blog website",
+3    "name": "blogwebsite",
 4    "version": "1.0.0",
 5    "description": "This is my first deployment",
 6    "scripts": {
